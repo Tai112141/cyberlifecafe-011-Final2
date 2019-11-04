@@ -40,7 +40,7 @@ class menu_model extends CI_Model {
 			return $result;
 		}
 		function delete($id){
-			$this->db->where('menu_id', $sid);
+			$this->db->where('menu_id', $id);
 			$this->db->delete('menu');  
 		}	
 		function selectOne($sid){
